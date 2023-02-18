@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="API learning" timestamp="2023-02-17T01:12:24" time="11.744" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="learning api" timestamp="2023-02-18T01:01:21" time="1.8" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="API learning"/>
+      <property name="suiteName" value="learning api"/>
       <property name="capabilities" value="chrome.110_0_5481_100.macosx"/>
-      <property name="file" value="file://./src/handleMultipleTabs.js"/>
+      <property name="file" value="file://./src/waitForDisappeared.js"/>
     </properties>
-    <testcase classname="chrome.110_0_5481_100.macosx.API_learning" name="handle multiple tabs" time="11.743">
+    <testcase classname="chrome.110_0_5481_100.macosx.learning_api" name="Wait for Disappear" time="1.785">
       <system-out><![CDATA[
-COMMAND: POST /session/356a3e2dd45297333ed29e21be93251e/url - {"url":"https://the-internet.herokuapp.com/windows"}
-RESULT: {"url":"https://the-internet.herokuapp.com/windows"}
-COMMAND: POST /session/356a3e2dd45297333ed29e21be93251e/element - {"using":"link text","value":"Click Here"}
-RESULT: {"using":"link text","value":"Click Here"}
-COMMAND: POST /session/356a3e2dd45297333ed29e21be93251e/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4e1ca4e0-1ca9-4648-a57a-394336986b83","ELEMENT":"4e1ca4e0-1ca9-4648-a57a-394336986b83"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4e1ca4e0-1ca9-4648-a57a-394336986b83","ELEMENT":"4e1ca4e0-1ca9-4648-a57a-394336986b83"}]}
-COMMAND: POST /session/356a3e2dd45297333ed29e21be93251e/element - {"using":"link text","value":"Click Here"}
-COMMAND: GET /session/356a3e2dd45297333ed29e21be93251e/window/handles - {}
-RESULT: {"using":"link text","value":"Click Here"}
-COMMAND: POST /session/356a3e2dd45297333ed29e21be93251e/element/4e1ca4e0-1ca9-4648-a57a-394336986b83/click - {}
-RESULT: {}
-RESULT: {}
-COMMAND: GET /session/356a3e2dd45297333ed29e21be93251e/title - {}
-COMMAND: POST /session/356a3e2dd45297333ed29e21be93251e/window - {"handle":"CDwindow-4B850A4EA24C6D86BCE4FD9E0F251FCE"}
-RESULT: {"handle":"CDwindow-4B850A4EA24C6D86BCE4FD9E0F251FCE"}
-RESULT: {}
-COMMAND: GET /session/356a3e2dd45297333ed29e21be93251e/title - {}
-COMMAND: POST /session/356a3e2dd45297333ed29e21be93251e/window - {"handle":"CDwindow-775A139AAD3D571F368558495348E5D5"}
-RESULT: {}
-RESULT: {"handle":"CDwindow-775A139AAD3D571F368558495348E5D5"}
-COMMAND: DELETE /session/356a3e2dd45297333ed29e21be93251e - {}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element - {"using":"css selector","value":"#username"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element - {"using":"css selector","value":"#password"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element - {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element - {"using":"css selector","value":"#username"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element - {"using":"css selector","value":"h1"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element - {"using":"css selector","value":"#username"}
+COMMAND: DELETE /session/d45f570c0fe950fb7f10be54e42aa7bc - {}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element/4e52c5d1-46fd-4e15-893b-7dcc6a50b0a8/clear - {}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element/49ba739b-8ee3-45a2-af49-2c4e4c51b2e6/clear - {}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/element/ff376d19-a841-4a47-8efc-08482938551a/click - {}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4e52c5d1-46fd-4e15-893b-7dcc6a50b0a8","ELEMENT":"4e52c5d1-46fd-4e15-893b-7dcc6a50b0a8"}]}
+RESULT: {"using":"css selector","value":"h1"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/elements - {"using":"css selector","value":"h1"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/d45f570c0fe950fb7f10be54e42aa7bc/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4e52c5d1-46fd-4e15-893b-7dcc6a50b0a8","ELEMENT":"4e52c5d1-46fd-4e15-893b-7dcc6a50b0a8"}]}
 RESULT: {}
 ]]></system-out>
     </testcase>
