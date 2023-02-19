@@ -96,6 +96,7 @@ exports.config = {
   hostname: 'localhost',
   port: 9515,
   path: '/',
+  baseUrl: 'https://the-internet.herokuapp.com',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
