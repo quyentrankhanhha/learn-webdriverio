@@ -1,5 +1,6 @@
 class LoginBase {
   openTestingPage(path) {
+    console.log(path)
     browser.url(path)
   }
 }
